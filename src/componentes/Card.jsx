@@ -1,18 +1,14 @@
 import React from "react";
 // import avatarJessica from "../public/avatar-jessica.jpeg"
 import UserDetails from "./UserDetails";
-import ButtonSection from "./ButtonSection";
 import "./Card.css";
 
-function Card(props) {
-  const user = props.user;
-  console.log(user);
+function Card({user}) {
   return (
     <div className="contenedorDinamico">
-      {/* <UserDetails user = {user}/> */}
-      <ButtonSection />
+        <UserDetails user = {user}/>
     </div>
-  );
+  )
 }
 
 export default Card;
